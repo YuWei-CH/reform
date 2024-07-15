@@ -28,7 +28,7 @@ jobs:
     - name: Run tests
       run: python test_reform.py
 # windows OS
-  build-linux:
+  build-windows:
     runs-on: windows-latest
 
     steps:
