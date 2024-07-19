@@ -289,7 +289,7 @@ def create_new_gff(new_gff_name, ref_gff, in_gff_lines, position, down_position,
 		ref_gff_path = ref_gff
 		if ref_gff.endswith('.gz'):
 			with gzip.open(ref_gff, 'rt') as f:
-						# Create a tempfile to store uncompressde content
+				# Create a tempfile to store uncompressde content
 				with tempfile.NamedTemporaryFile(delete=False, mode='w') as tmp_f:
 					tmp_f.write(f.read())
 					ref_gff_path = tmp_f.name
